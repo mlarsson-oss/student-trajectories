@@ -24,15 +24,15 @@
   <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:16px;">
     <div style="background:#f4f4f0;border-radius:8px;padding:14px;">
       <div style="font-size:11px;color:#888;margin-bottom:4px;">projects mastered</div>
-      <div style="font-size:26px;font-weight:600;color:#1a1a1a;">21</div>
+      <div style="font-size:26px;font-weight:600;color:#1a1a1a;">28</div>
     </div>
     <div style="background:#f4f4f0;border-radius:8px;padding:14px;">
       <div style="font-size:11px;color:#888;margin-bottom:4px;">total registered</div>
-      <div style="font-size:26px;font-weight:600;color:#1a1a1a;">29</div>
+      <div style="font-size:26px;font-weight:600;color:#1a1a1a;">35</div>
     </div>
     <div style="background:#f4f4f0;border-radius:8px;padding:14px;">
       <div style="font-size:11px;color:#888;margin-bottom:4px;">mastery rate</div>
-      <div style="font-size:26px;font-weight:600;color:#27500A;">72%</div>
+      <div style="font-size:26px;font-weight:600;color:#27500A;">80%</div>
     </div>
   </div>
 
@@ -79,16 +79,25 @@
           <td style="padding:5px 8px;font-size:12px;color:#27500A;">+14</td>
           <td style="padding:5px 8px;">
             <div style="height:8px;background:#f0f0ec;border-radius:4px;overflow:hidden;width:120px;">
-              <div style="height:100%;width:48.275862068965516%;background:#27500A;border-radius:4px;"></div>
+              <div style="height:100%;width:40.0%;background:#27500A;border-radius:4px;"></div>
             </div>
           </td>
         </tr><tr>
           <td style="padding:5px 8px;font-size:12px;color:#666;">Wk 3</td>
-          <td style="padding:5px 8px;font-size:12px;font-weight:500;">20</td>
-          <td style="padding:5px 8px;font-size:12px;color:#27500A;">+6</td>
+          <td style="padding:5px 8px;font-size:12px;font-weight:500;">27</td>
+          <td style="padding:5px 8px;font-size:12px;color:#27500A;">+13</td>
           <td style="padding:5px 8px;">
             <div style="height:8px;background:#f0f0ec;border-radius:4px;overflow:hidden;width:120px;">
-              <div style="height:100%;width:68.96551724137932%;background:#27500A;border-radius:4px;"></div>
+              <div style="height:100%;width:77.14285714285715%;background:#27500A;border-radius:4px;"></div>
+            </div>
+          </td>
+        </tr><tr>
+          <td style="padding:5px 8px;font-size:12px;color:#666;">Wk 4</td>
+          <td style="padding:5px 8px;font-size:12px;font-weight:500;">28</td>
+          <td style="padding:5px 8px;font-size:12px;color:#27500A;">+1</td>
+          <td style="padding:5px 8px;">
+            <div style="height:8px;background:#f0f0ec;border-radius:4px;overflow:hidden;width:120px;">
+              <div style="height:100%;width:80.0%;background:#27500A;border-radius:4px;"></div>
             </div>
           </td>
         </tr>
@@ -96,11 +105,11 @@
     </table>
   </div>
 
-  <div style="font-size:11px;color:#bbb;text-align:center;margin-top:8px;">Generated from Duet analytics · March Term 2026 · Updated March 28, 2026</div>
+  <div style="font-size:11px;color:#bbb;text-align:center;margin-top:8px;">Generated from Duet analytics · March Term 2026 · Updated March 31, 2026</div>
 </div>
 
 <script>
-const pts = [{"week": 0, "mastered": 0, "new": 0}, {"week": 1, "mastered": 0, "new": 0}, {"week": 2, "mastered": 14, "new": 14}, {"week": 3, "mastered": 20, "new": 6}];
+const pts = [{"week": 0, "mastered": 0, "new": 0}, {"week": 1, "mastered": 0, "new": 0}, {"week": 2, "mastered": 14, "new": 14}, {"week": 3, "mastered": 27, "new": 13}, {"week": 4, "mastered": 28, "new": 1}];
 new Chart(document.getElementById('chart'), {
   type: 'line',
   data: {
@@ -123,14 +132,14 @@ new Chart(document.getElementById('chart'), {
       legend: {display: false},
       tooltip: {
         callbacks: {
-          label: ctx => ` ${ctx.parsed.y} of 29 mastered (${Math.round(ctx.parsed.y/29*100)}%)`
+          label: ctx => ` ${ctx.parsed.y} of 35 mastered (${Math.round(ctx.parsed.y/35*100)}%)`
         }
       }
     },
     scales: {
       x: { grid: {color:'rgba(0,0,0,0.05)'}, ticks: {font:{size:11},color:'#aaa'} },
       y: {
-        min: 0, max: 29,
+        min: 0, max: 35,
         grid: {color:'rgba(0,0,0,0.05)'},
         ticks: {font:{size:11},color:'#aaa',stepSize: 2}
       }
