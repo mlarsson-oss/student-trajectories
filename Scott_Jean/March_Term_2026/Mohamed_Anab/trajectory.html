@@ -28,11 +28,11 @@
     </div>
     <div style="background:#f4f4f0;border-radius:8px;padding:14px;">
       <div style="font-size:11px;color:#888;margin-bottom:4px;">total registered</div>
-      <div style="font-size:26px;font-weight:600;color:#1a1a1a;">12</div>
+      <div style="font-size:26px;font-weight:600;color:#1a1a1a;">17</div>
     </div>
     <div style="background:#f4f4f0;border-radius:8px;padding:14px;">
       <div style="font-size:11px;color:#888;margin-bottom:4px;">mastery rate</div>
-      <div style="font-size:26px;font-weight:600;color:#27500A;">75%</div>
+      <div style="font-size:26px;font-weight:600;color:#27500A;">52%</div>
     </div>
   </div>
 
@@ -61,7 +61,7 @@
           <td style="padding:5px 8px;font-size:12px;color:#27500A;">+2</td>
           <td style="padding:5px 8px;">
             <div style="height:8px;background:#f0f0ec;border-radius:4px;overflow:hidden;width:120px;">
-              <div style="height:100%;width:16.666666666666664%;background:#27500A;border-radius:4px;"></div>
+              <div style="height:100%;width:11.76470588235294%;background:#27500A;border-radius:4px;"></div>
             </div>
           </td>
         </tr><tr>
@@ -70,7 +70,7 @@
           <td style="padding:5px 8px;font-size:12px;color:#27500A;">+2</td>
           <td style="padding:5px 8px;">
             <div style="height:8px;background:#f0f0ec;border-radius:4px;overflow:hidden;width:120px;">
-              <div style="height:100%;width:33.33333333333333%;background:#27500A;border-radius:4px;"></div>
+              <div style="height:100%;width:23.52941176470588%;background:#27500A;border-radius:4px;"></div>
             </div>
           </td>
         </tr><tr>
@@ -79,7 +79,7 @@
           <td style="padding:5px 8px;font-size:12px;color:#27500A;">+1</td>
           <td style="padding:5px 8px;">
             <div style="height:8px;background:#f0f0ec;border-radius:4px;overflow:hidden;width:120px;">
-              <div style="height:100%;width:41.66666666666667%;background:#27500A;border-radius:4px;"></div>
+              <div style="height:100%;width:29.411764705882355%;background:#27500A;border-radius:4px;"></div>
             </div>
           </td>
         </tr><tr>
@@ -88,7 +88,16 @@
           <td style="padding:5px 8px;font-size:12px;color:#27500A;">+4</td>
           <td style="padding:5px 8px;">
             <div style="height:8px;background:#f0f0ec;border-radius:4px;overflow:hidden;width:120px;">
-              <div style="height:100%;width:75.0%;background:#27500A;border-radius:4px;"></div>
+              <div style="height:100%;width:52.94117647058824%;background:#27500A;border-radius:4px;"></div>
+            </div>
+          </td>
+        </tr><tr>
+          <td style="padding:5px 8px;font-size:12px;color:#666;">Wk 4</td>
+          <td style="padding:5px 8px;font-size:12px;font-weight:500;">9</td>
+          <td style="padding:5px 8px;font-size:12px;color:#888;">—</td>
+          <td style="padding:5px 8px;">
+            <div style="height:8px;background:#f0f0ec;border-radius:4px;overflow:hidden;width:120px;">
+              <div style="height:100%;width:52.94117647058824%;background:#27500A;border-radius:4px;"></div>
             </div>
           </td>
         </tr>
@@ -96,11 +105,11 @@
     </table>
   </div>
 
-  <div style="font-size:11px;color:#bbb;text-align:center;margin-top:8px;">Generated from Duet analytics · March Term 2026 · Updated March 28, 2026</div>
+  <div style="font-size:11px;color:#bbb;text-align:center;margin-top:8px;">Generated from Duet analytics · March Term 2026 · Updated March 31, 2026</div>
 </div>
 
 <script>
-const pts = [{"week": 0, "mastered": 2, "new": 2}, {"week": 1, "mastered": 4, "new": 2}, {"week": 2, "mastered": 5, "new": 1}, {"week": 3, "mastered": 9, "new": 4}];
+const pts = [{"week": 0, "mastered": 2, "new": 2}, {"week": 1, "mastered": 4, "new": 2}, {"week": 2, "mastered": 5, "new": 1}, {"week": 3, "mastered": 9, "new": 4}, {"week": 4, "mastered": 9, "new": 0}];
 new Chart(document.getElementById('chart'), {
   type: 'line',
   data: {
@@ -123,14 +132,14 @@ new Chart(document.getElementById('chart'), {
       legend: {display: false},
       tooltip: {
         callbacks: {
-          label: ctx => ` ${ctx.parsed.y} of 12 mastered (${Math.round(ctx.parsed.y/12*100)}%)`
+          label: ctx => ` ${ctx.parsed.y} of 17 mastered (${Math.round(ctx.parsed.y/17*100)}%)`
         }
       }
     },
     scales: {
       x: { grid: {color:'rgba(0,0,0,0.05)'}, ticks: {font:{size:11},color:'#aaa'} },
       y: {
-        min: 0, max: 12,
+        min: 0, max: 17,
         grid: {color:'rgba(0,0,0,0.05)'},
         ticks: {font:{size:11},color:'#aaa',stepSize: 2}
       }
