@@ -18,7 +18,7 @@
   <div style="margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid #e0e0d8;">
     <div style="font-size:11px;color:#999;margin-bottom:4px;text-transform:uppercase;letter-spacing:.06em;">Michael Kerr · March Term 2026</div>
     <h1 style="font-size:22px;font-weight:600;color:#1a1a1a;margin-bottom:4px;">Farias Cabral, Elaine</h1>
-    <span style="display:inline-block;font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;background:#FFF3E0;color:#F57C00;">Slightly Behind</span>
+    <span style="display:inline-block;font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;background:#FCEBEB;color:#791F1F;">Behind</span>
   </div>
 
   <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:16px;">
@@ -32,7 +32,7 @@
     </div>
     <div style="background:#f4f4f0;border-radius:8px;padding:14px;">
       <div style="font-size:11px;color:#888;margin-bottom:4px;">mastery rate</div>
-      <div style="font-size:26px;font-weight:600;color:#F57C00;">16%</div>
+      <div style="font-size:26px;font-weight:600;color:#a32d2d;">16%</div>
     </div>
   </div>
 
@@ -61,7 +61,7 @@
           <td style="padding:5px 8px;font-size:12px;color:#888;">—</td>
           <td style="padding:5px 8px;">
             <div style="height:8px;background:#f0f0ec;border-radius:4px;overflow:hidden;width:120px;">
-              <div style="height:100%;width:0.0%;background:#F57C00;border-radius:4px;"></div>
+              <div style="height:100%;width:0.0%;background:#a32d2d;border-radius:4px;"></div>
             </div>
           </td>
         </tr><tr>
@@ -70,7 +70,7 @@
           <td style="padding:5px 8px;font-size:12px;color:#27500A;">+1</td>
           <td style="padding:5px 8px;">
             <div style="height:8px;background:#f0f0ec;border-radius:4px;overflow:hidden;width:120px;">
-              <div style="height:100%;width:8.333333333333332%;background:#F57C00;border-radius:4px;"></div>
+              <div style="height:100%;width:8.333333333333332%;background:#a32d2d;border-radius:4px;"></div>
             </div>
           </td>
         </tr><tr>
@@ -79,7 +79,7 @@
           <td style="padding:5px 8px;font-size:12px;color:#888;">—</td>
           <td style="padding:5px 8px;">
             <div style="height:8px;background:#f0f0ec;border-radius:4px;overflow:hidden;width:120px;">
-              <div style="height:100%;width:8.333333333333332%;background:#F57C00;border-radius:4px;"></div>
+              <div style="height:100%;width:8.333333333333332%;background:#a32d2d;border-radius:4px;"></div>
             </div>
           </td>
         </tr><tr>
@@ -88,7 +88,16 @@
           <td style="padding:5px 8px;font-size:12px;color:#27500A;">+1</td>
           <td style="padding:5px 8px;">
             <div style="height:8px;background:#f0f0ec;border-radius:4px;overflow:hidden;width:120px;">
-              <div style="height:100%;width:16.666666666666664%;background:#F57C00;border-radius:4px;"></div>
+              <div style="height:100%;width:16.666666666666664%;background:#a32d2d;border-radius:4px;"></div>
+            </div>
+          </td>
+        </tr><tr>
+          <td style="padding:5px 8px;font-size:12px;color:#666;">Wk 4</td>
+          <td style="padding:5px 8px;font-size:12px;font-weight:500;">2</td>
+          <td style="padding:5px 8px;font-size:12px;color:#888;">—</td>
+          <td style="padding:5px 8px;">
+            <div style="height:8px;background:#f0f0ec;border-radius:4px;overflow:hidden;width:120px;">
+              <div style="height:100%;width:16.666666666666664%;background:#a32d2d;border-radius:4px;"></div>
             </div>
           </td>
         </tr>
@@ -96,11 +105,11 @@
     </table>
   </div>
 
-  <div style="font-size:11px;color:#bbb;text-align:center;margin-top:8px;">Generated from Duet analytics · March Term 2026 · Updated March 28, 2026</div>
+  <div style="font-size:11px;color:#bbb;text-align:center;margin-top:8px;">Generated from Duet analytics · March Term 2026 · Updated March 31, 2026</div>
 </div>
 
 <script>
-const pts = [{"week": 0, "mastered": 0, "new": 0}, {"week": 1, "mastered": 1, "new": 1}, {"week": 2, "mastered": 1, "new": 0}, {"week": 3, "mastered": 2, "new": 1}];
+const pts = [{"week": 0, "mastered": 0, "new": 0}, {"week": 1, "mastered": 1, "new": 1}, {"week": 2, "mastered": 1, "new": 0}, {"week": 3, "mastered": 2, "new": 1}, {"week": 4, "mastered": 2, "new": 0}];
 new Chart(document.getElementById('chart'), {
   type: 'line',
   data: {
@@ -108,11 +117,11 @@ new Chart(document.getElementById('chart'), {
     datasets: [{
       label: 'Mastered',
       data: pts.map(p => p.mastered),
-      borderColor: '#F57C00',
-      backgroundColor: '#F57C0022',
+      borderColor: '#a32d2d',
+      backgroundColor: '#a32d2d22',
       borderWidth: 2.5,
       pointRadius: 4,
-      pointBackgroundColor: '#F57C00',
+      pointBackgroundColor: '#a32d2d',
       tension: 0.3,
       fill: true,
     }]
