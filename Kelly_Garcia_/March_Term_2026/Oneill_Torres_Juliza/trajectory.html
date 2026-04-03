@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oneill Torres, Juliza — March Term 2026 Progress</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:#f8f8f6;color:#1a1a1a;padding:32px 24px}
+  .page{max-width:780px;margin:0 auto}
+  .card{background:#fff;border:1px solid #e8e8e0;border-radius:12px;padding:24px;margin-bottom:16px}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div style="margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid #e0e0d8;">
+    <div style="font-size:11px;color:#999;margin-bottom:4px;text-transform:uppercase;letter-spacing:.06em;">Kelly Garcia  · March Term 2026</div>
+    <h1 style="font-size:22px;font-weight:600;color:#1a1a1a;margin-bottom:4px;">Oneill Torres, Juliza</h1>
+    <span style="display:inline-block;font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;background:#FCEBEB;color:#791F1F;">Behind</span>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:16px;">
+    <div style="background:#f4f4f0;border-radius:8px;padding:14px;">
+      <div style="font-size:11px;color:#888;margin-bottom:4px;">projects mastered</div>
+      <div style="font-size:26px;font-weight:600;color:#1a1a1a;">0</div>
+    </div>
+    <div style="background:#f4f4f0;border-radius:8px;padding:14px;">
+      <div style="font-size:11px;color:#888;margin-bottom:4px;">total registered</div>
+      <div style="font-size:26px;font-weight:600;color:#1a1a1a;">9</div>
+    </div>
+    <div style="background:#f4f4f0;border-radius:8px;padding:14px;">
+      <div style="font-size:11px;color:#888;margin-bottom:4px;">mastery rate</div>
+      <div style="font-size:26px;font-weight:600;color:#a32d2d;">0%</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div style="font-size:12px;color:#888;margin-bottom:12px;">cumulative projects mastered by week</div>
+    <div style="position:relative;height:260px;">
+      <canvas id="chart"></canvas>
+    </div>
+  </div>
+
+  <div class="card">
+    <div style="font-size:12px;color:#888;margin-bottom:12px;">week-by-week detail</div>
+    <table style="width:100%;border-collapse:collapse;">
+      <thead>
+        <tr style="border-bottom:1px solid #eee;">
+          <th style="padding:5px 8px;font-size:11px;color:#999;text-align:left;font-weight:500;">Week</th>
+          <th style="padding:5px 8px;font-size:11px;color:#999;text-align:left;font-weight:500;">Mastered</th>
+          <th style="padding:5px 8px;font-size:11px;color:#999;text-align:left;font-weight:500;">New</th>
+          <th style="padding:5px 8px;font-size:11px;color:#999;text-align:left;font-weight:500;">Progress</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding:5px 8px;font-size:12px;color:#666;">Wk 0</td>
+          <td style="padding:5px 8px;font-size:12px;font-weight:500;">0</td>
+          <td style="padding:5px 8px;font-size:12px;color:#888;">—</td>
+          <td style="padding:5px 8px;">
+            <div style="height:8px;background:#f0f0ec;border-radius:4px;overflow:hidden;width:120px;">
+              <div style="height:100%;width:0.0%;background:#a32d2d;border-radius:4px;"></div>
+            </div>
+          </td>
+        </tr><tr>
+          <td style="padding:5px 8px;font-size:12px;color:#666;">Wk 1</td>
+          <td style="padding:5px 8px;font-size:12px;font-weight:500;">0</td>
+          <td style="padding:5px 8px;font-size:12px;color:#888;">—</td>
+          <td style="padding:5px 8px;">
+            <div style="height:8px;background:#f0f0ec;border-radius:4px;overflow:hidden;width:120px;">
+              <div style="height:100%;width:0.0%;background:#a32d2d;border-radius:4px;"></div>
+            </div>
+          </td>
+        </tr><tr>
+          <td style="padding:5px 8px;font-size:12px;color:#666;">Wk 2</td>
+          <td style="padding:5px 8px;font-size:12px;font-weight:500;">0</td>
+          <td style="padding:5px 8px;font-size:12px;color:#888;">—</td>
+          <td style="padding:5px 8px;">
+            <div style="height:8px;background:#f0f0ec;border-radius:4px;overflow:hidden;width:120px;">
+              <div style="height:100%;width:0.0%;background:#a32d2d;border-radius:4px;"></div>
+            </div>
+          </td>
+        </tr><tr>
+          <td style="padding:5px 8px;font-size:12px;color:#666;">Wk 3</td>
+          <td style="padding:5px 8px;font-size:12px;font-weight:500;">0</td>
+          <td style="padding:5px 8px;font-size:12px;color:#888;">—</td>
+          <td style="padding:5px 8px;">
+            <div style="height:8px;background:#f0f0ec;border-radius:4px;overflow:hidden;width:120px;">
+              <div style="height:100%;width:0.0%;background:#a32d2d;border-radius:4px;"></div>
+            </div>
+          </td>
+        </tr><tr>
+          <td style="padding:5px 8px;font-size:12px;color:#666;">Wk 4</td>
+          <td style="padding:5px 8px;font-size:12px;font-weight:500;">0</td>
+          <td style="padding:5px 8px;font-size:12px;color:#888;">—</td>
+          <td style="padding:5px 8px;">
+            <div style="height:8px;background:#f0f0ec;border-radius:4px;overflow:hidden;width:120px;">
+              <div style="height:100%;width:0.0%;background:#a32d2d;border-radius:4px;"></div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div style="font-size:11px;color:#bbb;text-align:center;margin-top:8px;">Generated from Duet analytics · March Term 2026 · Updated April 03, 2026</div>
+</div>
+
+<script>
+const pts = [{"week": 0, "mastered": 0, "new": 0}, {"week": 1, "mastered": 0, "new": 0}, {"week": 2, "mastered": 0, "new": 0}, {"week": 3, "mastered": 0, "new": 0}, {"week": 4, "mastered": 0, "new": 0}];
+new Chart(document.getElementById('chart'), {
+  type: 'line',
+  data: {
+    labels: pts.map(p => 'Wk ' + p.week),
+    datasets: [{
+      label: 'Mastered',
+      data: pts.map(p => p.mastered),
+      borderColor: '#a32d2d',
+      backgroundColor: '#a32d2d22',
+      borderWidth: 2.5,
+      pointRadius: 4,
+      pointBackgroundColor: '#a32d2d',
+      tension: 0.3,
+      fill: true,
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: {
+      legend: {display: false},
+      tooltip: {
+        callbacks: {
+          label: ctx => ` ${ctx.parsed.y} of 9 mastered (${Math.round(ctx.parsed.y/9*100)}%)`
+        }
+      }
+    },
+    scales: {
+      x: { grid: {color:'rgba(0,0,0,0.05)'}, ticks: {font:{size:11},color:'#aaa'} },
+      y: {
+        min: 0, max: 9,
+        grid: {color:'rgba(0,0,0,0.05)'},
+        ticks: {font:{size:11},color:'#aaa',stepSize: 2}
+      }
+    }
+  }
+});
+</script>
+</body>
+</html>
