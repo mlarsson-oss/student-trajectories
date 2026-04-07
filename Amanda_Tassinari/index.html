@@ -7,50 +7,73 @@
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
   *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:'DM Sans','Helvetica Neue',sans-serif;background:#FEFBF4;color:#1C1712;padding:32px 24px}
+  body{font-family:'DM Sans','Helvetica Neue',sans-serif;background:#FEFBF4;color:#1C1712}
   a:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,0,0,0.08);}
 </style>
 </head>
 <body>
-<div style="max-width:600px;margin:0 auto;">
+<div style="max-width:600px;margin:0 auto;padding:40px 20px 60px;">
 
+  <!-- HEADER -->
   <div style="text-align:center;margin-bottom:32px;padding-bottom:24px;border-bottom:2px solid #E8DFD0;">
     <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.25em;text-transform:uppercase;color:#B8860B;margin-bottom:10px;">Duet Student Reports</div>
     <div style="font-family:'Playfair Display',Georgia,serif;font-size:32px;font-weight:900;color:#1C1712;line-height:1.1;margin-bottom:6px;">Amanda Tassinari</div>
-    <div style="font-size:13px;color:#7A6E64;">Select a term to view student progress & trajectory</div>
+    <div style="font-size:13px;color:#7A6E64;">Select a term and report type</div>
   </div>
 
+  <!-- TERMS -->
   
     <div style="background:#fff;border:1.5px solid #E8DFD0;border-radius:14px;padding:20px 24px;margin-bottom:16px;">
       <div style="font-family:'Playfair Display',Georgia,serif;font-size:20px;font-weight:700;color:#1C1712;margin-bottom:12px;">March Term 2026</div>
-      <a href="March_Term_2026/" style="display:inline-flex;align-items:center;gap:8px;padding:10px 16px;background:linear-gradient(135deg,#FFFBEF,#FFF6DC);border:1.5px solid #B8860B;border-radius:10px;text-decoration:none;color:#B8860B;font-weight:500;transition:all 0.15s ease;">
-        <span style="font-size:18px;">📊</span>
-        <span>View Students</span>
-        <span style="font-family:'DM Mono',monospace;font-size:11px;background:rgba(184,134,11,0.15);padding:2px 8px;border-radius:10px;">8</span>
-      </a>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <a href="progress/March_Term_2026/" style="display:flex;align-items:center;gap:8px;padding:10px 16px;background:linear-gradient(135deg,#F0FAF4,#E2F5E9);border:1.5px solid #52B788;border-radius:10px;text-decoration:none;color:#2D6A4F;font-weight:500;transition:all 0.15s ease;">
+          <span style="font-size:18px;">📊</span>
+          <span>Degree Progress</span>
+          <span style="font-family:'DM Mono',monospace;font-size:11px;background:rgba(45,106,79,0.15);padding:2px 8px;border-radius:10px;">8</span>
+        </a>
+        <a href="March_Term_2026/" style="display:flex;align-items:center;gap:8px;padding:10px 16px;background:linear-gradient(135deg,#FFFBEF,#FFF6DC);border:1.5px solid #B8860B;border-radius:10px;text-decoration:none;color:#B8860B;font-weight:500;transition:all 0.15s ease;">
+          <span style="font-size:18px;">📈</span>
+          <span>Term Trajectory</span>
+        </a>
+      </div>
     </div>
     <div style="background:#fff;border:1.5px solid #E8DFD0;border-radius:14px;padding:20px 24px;margin-bottom:16px;">
       <div style="font-family:'Playfair Display',Georgia,serif;font-size:20px;font-weight:700;color:#1C1712;margin-bottom:12px;">January Term 2026</div>
-      <a href="January_Term_2026/" style="display:inline-flex;align-items:center;gap:8px;padding:10px 16px;background:linear-gradient(135deg,#FFFBEF,#FFF6DC);border:1.5px solid #B8860B;border-radius:10px;text-decoration:none;color:#B8860B;font-weight:500;transition:all 0.15s ease;">
-        <span style="font-size:18px;">📊</span>
-        <span>View Students</span>
-        <span style="font-family:'DM Mono',monospace;font-size:11px;background:rgba(184,134,11,0.15);padding:2px 8px;border-radius:10px;">4</span>
-      </a>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <a href="progress/January_Term_2026/" style="display:flex;align-items:center;gap:8px;padding:10px 16px;background:linear-gradient(135deg,#F0FAF4,#E2F5E9);border:1.5px solid #52B788;border-radius:10px;text-decoration:none;color:#2D6A4F;font-weight:500;transition:all 0.15s ease;">
+          <span style="font-size:18px;">📊</span>
+          <span>Degree Progress</span>
+          <span style="font-family:'DM Mono',monospace;font-size:11px;background:rgba(45,106,79,0.15);padding:2px 8px;border-radius:10px;">4</span>
+        </a>
+        <a href="January_Term_2026/" style="display:flex;align-items:center;gap:8px;padding:10px 16px;background:linear-gradient(135deg,#FFFBEF,#FFF6DC);border:1.5px solid #B8860B;border-radius:10px;text-decoration:none;color:#B8860B;font-weight:500;transition:all 0.15s ease;">
+          <span style="font-size:18px;">📈</span>
+          <span>Term Trajectory</span>
+        </a>
+      </div>
     </div>
 
+  <!-- LEGEND -->
   <div style="background:#F5F0E8;border-radius:10px;padding:16px 20px;margin-top:24px;">
-    <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#7A6E64;margin-bottom:10px;">What's Included</div>
+    <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:#7A6E64;margin-bottom:10px;">Report Types</div>
     <div style="display:flex;flex-direction:column;gap:8px;">
       <div style="display:flex;align-items:center;gap:10px;">
         <span style="font-size:16px;">📊</span>
         <div>
-          <div style="font-weight:500;color:#1C1712;font-size:13px;">Combined Progress + Trajectory</div>
-          <div style="font-size:11px;color:#7A6E64;">Full degree journey with course stamps, credits, AND weekly term trajectory chart</div>
+          <div style="font-weight:500;color:#1C1712;font-size:13px;">Degree Progress</div>
+          <div style="font-size:11px;color:#7A6E64;">Full degree journey with course stamps and credit status</div>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;">
+        <span style="font-size:16px;">📈</span>
+        <div>
+          <div style="font-weight:500;color:#1C1712;font-size:13px;">Term Trajectory</div>
+          <div style="font-size:11px;color:#7A6E64;">Weekly progress chart for current term projects</div>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- FOOTER -->
   <div style="text-align:center;margin-top:40px;padding-top:20px;border-top:1px solid #E8DFD0;">
     <div style="font-family:'Playfair Display',Georgia,serif;font-size:16px;font-weight:700;color:#7A6E64;">Duet</div>
     <div style="font-size:11px;color:#7A6E64;opacity:0.5;margin-top:3px;">Updated April 07, 2026</div>
